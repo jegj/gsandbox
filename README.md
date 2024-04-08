@@ -1,2 +1,3 @@
 # gsandbox
-golang sandbox
+
+daily golang sandbox
