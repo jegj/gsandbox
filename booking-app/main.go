@@ -10,10 +10,7 @@ func main() {
 	const conferenceTickets uint = 50
 	var remainingTickets uint = 50
 
-	fmt.Printf("conferenceTickets is %T, remainingTickets is %T and conferenceName is %T", conferenceTickets, remainingTickets, conferenceName)
-	fmt.Printf("Welcome to %v booking application\n", conferenceName)
-	fmt.Printf("We have total of %v ticket and %v are still available\n", conferenceTickets, remainingTickets)
-	fmt.Println("Get your tickets here to attend")
+	greetUsers(conferenceName, conferenceTickets, remainingTickets)
 
 	var bookings []string // slice
 	//var bookings = []string{} // slice
@@ -38,7 +35,11 @@ func main() {
 		fmt.Println("Enter number of tickets:")
 		fmt.Scan(&userTickets)
 
-		if userTickets <= remainingTickets {
+		isValidName := len(userName) >= 2 && len(lastName) >= 2
+		isValidEmail := strings.Contains(email, "@")
+		isValidTicketNumber := userTickets > 0 && userTickets <= remainingTickets
+
+		if isValidName && isValidEmail && isValidTicketNumber {
 			remainingTickets -= userTickets
 			// bookings[0] = userName + " " + lastName
 			bookings = append(bookings, userName+" "+lastName)
@@ -66,8 +67,15 @@ func main() {
 			}
 
 		} else {
-			fmt.Printf("We only have %v ickets remaining", remainingTickets)
+			fmt.Printf("Your input data is invalid. Try again")
 			continue
 		}
 	}
+}
+
+func greetUsers(confName string, confTickets uint, remainingTickets uint) {
+	fmt.Printf("conferenceTickets is %T, remainingTickets is %T and conferenceName is %T", confTickets, remainingTickets, confName)
+	fmt.Printf("Welcome to %v booking application\n", confName)
+	fmt.Printf("We have total of %v ticket and %v are still available\n", confTickets, remainingTickets)
+	fmt.Println("Get your tickets here to attend")
 }
