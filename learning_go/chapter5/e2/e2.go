@@ -17,7 +17,6 @@ func main() {
 	}
 
 	fmt.Printf("-->%v\n", count)
-
 }
 
 func fileLen(fileName string) (int, error) {
@@ -39,5 +38,4 @@ func fileLen(fileName string) (int, error) {
 		}
 	}
 	return total, nil
-
 }
