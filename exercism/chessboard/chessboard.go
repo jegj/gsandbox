@@ -8,6 +8,17 @@ type Chessboard map[string]File
 
 // CountInFile returns how many squares are occupied in the chessboard,
 // within the given file.
+
+func CountInFile(cb Chessboard, file string) (sum int) {
+	for _, v := range cb[file] {
+		if v {
+			sum++
+		}
+	}
+	return
+}
+
+/*
 func CountInFile(cb Chessboard, file string) int {
 	count := 0
 	fileSlice, exists := cb[file]
@@ -20,6 +31,7 @@ func CountInFile(cb Chessboard, file string) int {
 	}
 	return count
 }
+*/
 
 // CountInRank returns how many squares are occupied in the chessboard,
 // within the given rank.
