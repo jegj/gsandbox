@@ -26,6 +26,13 @@ func (car Car) CanFinish(trackDistance int) bool {
 	return car.battery-(consumeCycles*car.batteryDrain) >= 0
 }
 
+/*
+* Another approach:
+func (c *Car) CanFinish(trackDistance int) bool {
+    return c.battery / c.batteryDrain * c.speed >= trackDistance
+}
+*/
+
 // Your first steps could be to read through the tasks, and create
 // these functions with their correct parameter lists and return types.
 // The function body only needs to contain `panic("")`.
