@@ -35,15 +35,15 @@ func RemoveEndOfLineText(text string) string {
 func TagWithUserName(lines []string) []string {
 	result := make([]string, len(lines))
 	re := regexp.MustCompile(`\s*User\s+\w+\s+`)
-	for _, line := range lines {
+	for index, line := range lines {
 		sl := re.FindStringSubmatch(line)
 		if len(sl) > 0 {
 			userChunk := sl[0]
-			prefix := strings.Trim(strings.ReplaceAll(userChunk, "User", "[USR]"), "")
-			fmt.Printf("==>>>%v", prefix+line)
-			result = append(result, prefix+line)
+			name := strings.Trim(strings.ReplaceAll(userChunk, "User", ""), " ")
+			prefix := fmt.Sprintf("[USR] %s ", name)
+			result[index] = prefix + line
 		} else {
-			result = append(result, line)
+			result[index] = line
 		}
 	}
 	return result

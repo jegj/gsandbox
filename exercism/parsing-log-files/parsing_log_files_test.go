@@ -1,6 +1,9 @@
 package parsinglogfiles
 
-import "testing"
+import (
+	"fmt"
+	"testing"
+)
 
 func TestIsValidLine(t *testing.T) {
 	tests := []struct {
@@ -186,6 +189,8 @@ func TestTagWithUserName(t *testing.T) {
 			if !stringSliceEqual(want, got) {
 				for i := range got {
 					if want[i] != got[i] {
+						fmt.Printf("Test want=>%s\n", want[i])
+						fmt.Printf("Test got=>%s\n", got[i])
 						t.Fatalf("expected: %v, got: %v", want[i], got[i])
 					}
 				}
