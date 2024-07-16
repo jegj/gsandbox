@@ -11,3 +11,4 @@ daily golang sandbox
 ## Repos
 
 - [tweet_automated_bot](https://github.com/forgeutah/tweet_automated_bot)
+- [golang-cli-game](https://github.com/Soypete/golang-cli-game)
