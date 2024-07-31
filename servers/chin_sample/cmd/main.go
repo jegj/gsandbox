@@ -49,12 +49,33 @@ func main() {
 	// curl localhost:3000/ping
 	r.Use(middleware.Heartbeat("/ping"))
 
+	/*
+		r.Use(func(next http.Handler) http.Handler {
+			return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+				ctx := r.Context()
+
+				// Set a single log field
+				httplog.LogEntrySetField(ctx, "user", slog.StringValue("user1"))
+
+				// Set multiple fields
+				fields := map[string]any{
+					"remote": "example.com",
+					"action": "update",
+				}
+				httplog.LogEntrySetFields(ctx, fields)
+				next.ServeHTTP(w, r.WithContext(ctx))
+			})
+		})
+	*/
+
 	// curl localhost:3000
 	r.Get("/", func(w http.ResponseWriter, r *http.Request) {
 		w.Write([]byte("Hello World!"))
 	})
 	// curl localhost:3000/info
 	r.Get("/info", func(w http.ResponseWriter, r *http.Request) {
+		// oplog := httplog.LogEntry(r.Context())
+		// oplog.Info("info here")
 		w.Write([]byte("info..."))
 	})
 
@@ -70,6 +91,13 @@ func main() {
 		time.Sleep(5 * time.Second)
 
 		fmt.Fprintf(w, "all done.\n")
+	})
+
+	r.Get("/warn", func(w http.ResponseWriter, r *http.Request) {
+		// oplog := httplog.LogEntry(r.Context())
+		// oplog.Warn("warn here")
+		w.WriteHeader(400)
+		w.Write([]byte("warn here"))
 	})
 
 	// RESTy routes for "articles" resource
