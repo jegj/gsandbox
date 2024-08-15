@@ -12,3 +12,6 @@ daily golang sandbox
 
 - [tweet_automated_bot](https://github.com/forgeutah/tweet_automated_bot)
 - [golang-cli-game](https://github.com/Soypete/golang-cli-game)
+- [go blueprint](https://github.com/Melkeydev/go-blueprint?tab=readme-ov-file)
+- [example web server](https://github.com/sikozonpc/ecom)
+- [example cli](https://github.com/knqyf263/pet)
