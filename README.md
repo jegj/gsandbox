@@ -16,3 +16,4 @@ daily golang sandbox
 - [go blueprint](https://github.com/Melkeydev/go-blueprint?tab=readme-ov-file)
 - [example web server](https://github.com/sikozonpc/ecom)
 - [example cli](https://github.com/knqyf263/pet)
+- [Framework for TUI](https://leg100.github.io/en/posts/building-bubbletea-programs/)
