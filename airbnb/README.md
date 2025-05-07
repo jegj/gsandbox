@@ -26,6 +26,22 @@
 - WIFI password
 - House Manual. Videos about accessories in the house
 
+## Mockups
+
+## Examples and templates
+
+### Possible Providers
+
+- <https://html5up.net/>
+- <https://startbootstrap.com/>
+- <https://flowbite.com/#components>
+
+#### Examples
+
+- <https://html5up.net/txt>
+- <https://startbootstrap.com/previews/blog-home>
+- <https://getbootstrap.com/docs/5.0/examples/blog/#>
+
 ## Tech Stack options
 
 - custom
