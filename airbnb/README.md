@@ -26,8 +26,6 @@
 - WIFI password
 - House Manual. Videos about accessories in the house
 
-## Mockups
-
 ## Examples and templates
 
 ### Possible Providers
