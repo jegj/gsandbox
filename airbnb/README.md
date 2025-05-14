@@ -33,6 +33,9 @@
 - <https://html5up.net/>
 - <https://startbootstrap.com/>
 - <https://flowbite.com/#components>
+- <https://bulma.io/> **
+- <https://get.foundation/templates.html> **
+- <https://semantic-ui.com/usage/layout.html> **
 
 #### Examples
 
