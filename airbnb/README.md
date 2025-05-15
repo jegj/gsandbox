@@ -42,6 +42,7 @@
 - <https://html5up.net/txt>
 - <https://startbootstrap.com/previews/blog-home>
 - <https://getbootstrap.com/docs/5.0/examples/blog/#>
+- <https://html5up.net/dopetrope> [WINNER]
 
 ## Tech Stack options
 
