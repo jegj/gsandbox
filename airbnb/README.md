@@ -25,6 +25,7 @@
 - Secure Taxi(Whatsapp) per availability
 - WIFI password
 - House Manual. Videos about accessories in the house
+- Translations
 
 ## Examples and templates
 
