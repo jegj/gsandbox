@@ -1,0 +1,21 @@
+{
+  "name": "demo",
+  "version": "1.0.0",
+  "description": "A demo for the airbnb web page",
+  "keywords": [
+    "airbnb",
+    "demo",
+    "test"
+  ],
+  "license": "MIT",
+  "author": "jegj57@gmail.com",
+  "type": "commonjs",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass assets/sass/main.scss assets/css/main.css"
+  },
+  "devDependencies": {
+    "sass": "^1.89.0"
+  }
+}
