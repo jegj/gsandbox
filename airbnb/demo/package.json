@@ -12,6 +12,7 @@
   "type": "commonjs",
   "main": "index.html",
   "scripts": {
+    "start": "vite",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
