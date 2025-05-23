@@ -27,6 +27,14 @@
 - House Manual. Videos about accessories in the house
 - Translations
 
+## IA providers
+
+- <https://stitch.withgoogle.com>
+- <https://v0.dev/>
+- <https://www.framer.com>
+- <https://codedesign.ai>
+- <https://uizard.io/>
+
 ## Examples and templates
 
 ### Possible Providers
