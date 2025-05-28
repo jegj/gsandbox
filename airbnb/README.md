@@ -21,6 +21,8 @@
 - Guestpedia [taken]
 - Staypedia
 - StayHub [taken]
+- Lima Urban Apartments
+- Urban Apartments Guide
 
 ## Features
 
