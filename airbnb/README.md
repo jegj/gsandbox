@@ -16,6 +16,12 @@
 - <https://guide.touchstay.com/guest/EozWsyokwbTik/info/147137>
 - <https://guide.touchstay.com/guest/yvGv4cniiaRit/info/254208>
 
+## Names
+
+- Guestpedia [taken]
+- Staypedia
+- StayHub [taken]
+
 ## Features
 
 - List of events nearby a location with pictures
@@ -26,6 +32,7 @@
 - WIFI password
 - House Manual. Videos about accessories in the house
 - Translations
+- Language selection
 
 ## IA providers
 
